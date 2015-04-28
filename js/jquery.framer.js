@@ -46,7 +46,8 @@
             { width:800, height:480, label:'Small Tablet (landscape)', adjustForScrollbar:true },
             { width:768, height:1024, label:'Large Tablet (portrait)', adjustForScrollbar:true },
             { width:1024, height:768, label:'Large Tablet (landscape)', adjustForScrollbar:true },
-            { width:1280, height:800, label:'Desktop' }
+            { width:1280, height:800, label:'Desktop' },
+            { width:1440, height:900, label:'Macbook' }
         ];
 
         // by default, get full url of page for iframes
