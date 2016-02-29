@@ -42,6 +42,10 @@
         defaults.frames = [
             { width:320, height:480, label:'Phone (portrait)', adjustForScrollbar:true },
             { width:480, height:320, label:'Phone (landscape)', adjustForScrollbar:true },
+            { width:357, height:667, label:'iPhone 6 (portrait)', adjustForScrollbar:true },
+            { width:667, height:357, label:'iPhone 6 (landscape)', adjustForScrollbar:true },
+            { width:340, height:640, label:'Samsung S6 (portrait)', adjustForScrollbar:true },
+            { width:640, height:340, label:'Samsung S6 (landscape)', adjustForScrollbar:true },
             { width:480, height:800, label:'Small Tablet (portrait)', adjustForScrollbar:true },
             { width:800, height:480, label:'Small Tablet (landscape)', adjustForScrollbar:true },
             { width:768, height:1024, label:'Large Tablet (portrait)', adjustForScrollbar:true },
