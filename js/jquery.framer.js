@@ -8,7 +8,7 @@
     See it in action on Responsivator!
     http://dfcb.github.com/Responsivator
 
-    
+
     -----
     USAGE
     -----
@@ -16,7 +16,7 @@
     If all you want to do is turn your webpage into a Responsive Design Test Page:
     $.Framer();
 
-    
+
     You can customize by doing this:
     var framesArray = [
         { width:320, height:480, label:'Phone (portrait)' },
@@ -51,6 +51,7 @@
             { width:768, height:1024, label:'Large Tablet (portrait)', adjustForScrollbar:true },
             { width:1024, height:768, label:'Large Tablet (landscape)', adjustForScrollbar:true },
             { width:1280, height:800, label:'Desktop' },
+            { width:1366, height:768, label:'Laptop' },
             { width:1440, height:900, label:'Macbook' }
         ];
 
