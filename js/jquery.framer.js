@@ -8,7 +8,7 @@
     See it in action on Responsivator!
     http://dfcb.github.com/Responsivator
 
-
+    
     -----
     USAGE
     -----
@@ -16,7 +16,7 @@
     If all you want to do is turn your webpage into a Responsive Design Test Page:
     $.Framer();
 
-
+    
     You can customize by doing this:
     var framesArray = [
         { width:320, height:480, label:'Phone (portrait)' },
@@ -52,7 +52,9 @@
             { width:1024, height:768, label:'Large Tablet (landscape)', adjustForScrollbar:true },
             { width:1280, height:800, label:'Desktop' },
             { width:1366, height:768, label:'Laptop' },
-            { width:1440, height:900, label:'Macbook' }
+            { width:1440, height:900, label:'Macbook' },
+            { width:1920, height:1080, label:'Full HD' },
+            { width:2560, height:1440, label:'Apple Cinema Display' }
         ];
 
         // by default, get full url of page for iframes
@@ -72,7 +74,7 @@
             var scrollbarAdjust = typeof(frames[i].adjustForScrollbar) === 'undefined' ? 0 : (frames[i].adjustForScrollbar ? 16 : 0);
             markup += '<div class="frame">';
             markup +=   '<h2>'+frames[i].width+' &times; '+frames[i].height+' <small>'+frames[i].label+'</small></h2>';
-            markup +=   '<iframe src="'+settings.url+'" sandbox="allow-same-origin allow-forms allow-scripts" seamless width="'+(parseInt(frames[i].width)+scrollbarAdjust)+'" height="'+frames[i].height+'"></iframe>';
+            markup +=   '<iframe src="'+settings.url+'" sandbox="allow-same-origin allow-forms allow-scripts" seamless width="'+(parseInt(frames[i].width,10)+scrollbarAdjust)+'" height="'+frames[i].height+'"></iframe>';
             markup += '</div>';
         }
         markup += '</div>';
