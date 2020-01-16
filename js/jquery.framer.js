@@ -40,21 +40,15 @@
         var defaults = {};
         defaults.target = 'body';
         defaults.frames = [
-            { width:320, height:480, label:'Phone (portrait)', adjustForScrollbar:true },
-            { width:480, height:320, label:'Phone (landscape)', adjustForScrollbar:true },
-            { width:357, height:667, label:'iPhone 6 (portrait)', adjustForScrollbar:true },
-            { width:667, height:357, label:'iPhone 6 (landscape)', adjustForScrollbar:true },
-            { width:340, height:640, label:'Samsung S6 (portrait)', adjustForScrollbar:true },
-            { width:640, height:340, label:'Samsung S6 (landscape)', adjustForScrollbar:true },
-            { width:480, height:800, label:'Small Tablet (portrait)', adjustForScrollbar:true },
-            { width:800, height:480, label:'Small Tablet (landscape)', adjustForScrollbar:true },
-            { width:768, height:1024, label:'Large Tablet (portrait)', adjustForScrollbar:true },
-            { width:1024, height:768, label:'Large Tablet (landscape)', adjustForScrollbar:true },
-            { width:1280, height:800, label:'Desktop' },
-            { width:1366, height:768, label:'Laptop' },
-            { width:1440, height:900, label:'Macbook' },
-            { width:1920, height:1080, label:'Full HD' },
-            { width:2560, height:1440, label:'Apple Cinema Display' }
+            { width:375, height:667, label: 'Mobile', adjustForScrollbar:true },
+            { width:640, height:1024, label: 'Tablet', adjustForScrollbar:true },
+            { width:768, height:1024, label: 'Tablet', adjustForScrollbar:true },
+            { width:1024, height:768, label: 'Tablet', adjustForScrollbar:true },
+            { width:1280, height:720, label: 'Monitor' },
+            { width:1366, height:768, label: 'Notebook' },
+            { width:1440, height:900, label: 'Monitor' },
+            { width:1920, height:1080, label: 'Monitor' },
+            { width:2560, height:1440, label: 'Apple Monitor' }
         ];
 
         // by default, get full url of page for iframes

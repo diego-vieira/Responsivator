@@ -29,7 +29,8 @@
         // Thanks guy on StackOverflow! - http://stackoverflow.com/questions/8648892/convert-url-parameters-to-a-javascript-object
         var configDataParams = {};
         if (decodeURI((location.search).substr(1)) !== '') {
-            configDataParams = JSON.parse('{"' + decodeURI((location.search).substr(1).replace(/&/g, "\",\"").replace(/=/g,"\":\"")) + '"}');
+            var parts = decodeURI((location.search).substr(1).replace(/&/g, "\",\"")).replace(/site=/g,"site\":\"").replace(/sizes=/g,"sizes\":\"");
+            configDataParams = JSON.parse('{"' + parts + '"}');
             $.each(configDataParams, function(key,val){
                 if (val.indexOf(',') !== -1) {
                     configDataParams[key] = val.split(',');
